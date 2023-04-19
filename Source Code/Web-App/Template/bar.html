@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<style>
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-color: #272b34;
+	font-family: 'Khula', sans-serif;
+	font-weight: 300;
+	color: white;
+	line-height: 1em;
+	margin: 0;
+padding: 2em 1em;
+}
+
+</style>
+<body>
+<h1><center>Customer Transaction Data Dashboard</center></h1>
+<div class="form-group"><center>
+    <div class="input-group">
+        <span class="input-group-addon">Please select customer ID</span>
+            <select name="comp_select" class="selectpicker form-control">
+              {% for o in data %}
+              <option value="{{o}}">{{o}}</option>
+              {% endfor %}
+            </select>
+			<input type="submit" value="Search">
+</div></center>
+</body>
+
+<div>
+    <img src="img.jpeg" alt="" height="100">
+</div>
+</html>
